@@ -1,0 +1,50 @@
+:root {
+  --bg:        #eaeded;
+  --dark:      #131921;
+  --nav:       #232f3e;
+  --nav-hover: #37475a;
+  --text:      #0f1111;
+  --muted:     #565959;
+  --link:      #007185;
+  --link-h:    #c7511f;
+  --green:     #007600;
+  --red:       #b12704;
+  --badge-red: #cc0c39;
+  --gold:      #f0c14b;
+  --gold-dark: #a88734;
+  --border:    #d5d9d9;
+  --white:     #ffffff;
+  --btn-grad:  linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  --btn-grad-h:linear-gradient(to bottom, #f5d78e, #eeb933);
+  --btn-sec:   linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  --btn-sec-h: linear-gradient(to bottom, #e7e9ec, #d9dce1);
+}
+
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Amazon Ember", "Helvetica Neue", Arial, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  font-size: 14px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+}

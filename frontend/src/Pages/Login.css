@@ -1,0 +1,217 @@
+.login-page {
+  background: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 16px 40px;
+}
+
+/* ── Logo ── */
+.login-logo {
+  font-size: 34px;
+  font-weight: 700;
+  color: #0f1111;
+  margin-bottom: 20px;
+  letter-spacing: -1px;
+  line-height: 1;
+}
+.login-logo span { color: #f0a500; font-size: 20px; vertical-align: super; }
+
+/* ── Card ── */
+.login {
+  width: 100%;
+  max-width: 348px;
+  padding: 22px 28px 28px;
+  background: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.06);
+}
+
+.login h1 {
+  font-size: 28px;
+  font-weight: 400;
+  color: #0f1111;
+  margin-bottom: 18px;
+  line-height: 1.2;
+}
+
+/* ── Ask step ── */
+.login--ask {
+  text-align: center;
+  padding: 32px 28px 28px;
+}
+
+.ask-icon {
+  font-size: 52px;
+  margin-bottom: 12px;
+}
+
+.login--ask h1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.ask-subtitle {
+  font-size: 15px;
+  color: #565959;
+  margin-bottom: 24px;
+  line-height: 1.5;
+}
+
+.ask-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.ask-btn {
+  width: 100%;
+  padding: 11px 10px;
+  font-size: 15px;
+  border-radius: 20px;
+}
+
+/* ── Back button ── */
+.login-back {
+  background: none;
+  border: none;
+  color: #007185;
+  font-size: 13px;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 14px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.login-back:hover { color: #c7511f; text-decoration: underline; }
+
+/* ── Inputs ── */
+.login-input-wrap { margin-bottom: 12px; }
+
+.login-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 700;
+  color: #0f1111;
+  margin-bottom: 3px;
+}
+
+.login input {
+  width: 100%;
+  padding: 7px 10px;
+  border: 1px solid #888c8c;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #0f1111;
+  outline: none;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.08) inset;
+  transition: border-color 0.1s, box-shadow 0.1s;
+}
+.login input:focus {
+  border-color: #e77600;
+  box-shadow: 0 0 0 3px rgba(228,121,17,0.5);
+}
+
+/* ── Primary button ── */
+.login-btn {
+  width: 100%;
+  padding: 9px 10px;
+  background: linear-gradient(to bottom, #f7dfa5, #f0c14b);
+  border: 1px solid #a88734;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #111;
+  margin-top: 4px;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.4) inset;
+  transition: background 0.12s;
+  cursor: pointer;
+}
+.login-btn:hover:not(:disabled) { background: linear-gradient(to bottom, #f5d78e, #eeb933); }
+.login-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+/* ── Terms ── */
+.login-terms {
+  font-size: 12px;
+  color: #555;
+  margin-top: 14px;
+  line-height: 1.6;
+}
+.login-terms a { color: #007185; }
+.login-terms a:hover { color: #c7511f; text-decoration: underline; }
+
+/* ── Divider ── */
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 18px 0 12px;
+}
+.login-divider::before,
+.login-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: #e7e7e7;
+}
+.login-divider span {
+  font-size: 12px;
+  color: #767676;
+  white-space: nowrap;
+}
+
+/* ── Secondary button ── */
+.login-create-btn {
+  width: 100%;
+  padding: 9px 10px;
+  background: linear-gradient(to bottom, #f7f8fa, #e7e9ec);
+  border: 1px solid #adb1b8;
+  border-radius: 3px;
+  font-size: 14px;
+  color: #0f1111;
+  box-shadow: 0 1px 0 rgba(255,255,255,0.6) inset;
+  transition: background 0.12s;
+  cursor: pointer;
+}
+.login-create-btn:hover:not(:disabled) { background: linear-gradient(to bottom, #e7e9ec, #d9dce1); }
+.login-create-btn:disabled { opacity: 0.6; cursor: not-allowed; }
+
+/* ── Error ── */
+.login-error {
+  color: #c40000;
+  font-size: 13px;
+  border: 1px solid #c40000;
+  border-radius: 3px;
+  padding: 8px 10px;
+  background: #fff6f6;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+/* ── Bottom links ── */
+.login-bottom {
+  margin-top: 28px;
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+  width: 100%;
+  max-width: 348px;
+}
+.login-bottom::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background: linear-gradient(to right, transparent, #ddd 30%, #ddd 70%, transparent);
+  margin-bottom: 14px;
+}
+.login-bottom a { color: #007185; }
+.login-bottom a:hover { color: #c7511f; text-decoration: underline; }
+.login-bottom p { margin-top: 10px; color: #767676; }
+
+@media (max-width: 400px) {
+  .login { padding: 18px 16px 22px; }
+}

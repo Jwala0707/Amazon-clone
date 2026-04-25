@@ -1,0 +1,117 @@
+.megamenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 280px;
+  height: 100vh;
+  background: #fff;
+  z-index: 2000;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 4px 0 20px rgba(0,0,0,0.25);
+  animation: slideInLeft 0.2s ease;
+  overflow-y: auto;
+}
+
+@keyframes slideInLeft {
+  from { transform: translateX(-100%); opacity: 0; }
+  to   { transform: translateX(0);     opacity: 1; }
+}
+
+/* ── Header ── */
+.megamenu__header {
+  background: #232f3e;
+  padding: 16px 18px;
+  flex-shrink: 0;
+}
+
+.megamenu__greeting {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.megamenu__signin {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  text-decoration: none;
+}
+.megamenu__signin:hover { text-decoration: underline; }
+
+/* ── Body ── */
+.megamenu__body {
+  flex: 1;
+  overflow-y: auto;
+  padding-bottom: 8px;
+}
+
+/* ── Section ── */
+.megamenu__section {
+  border-bottom: 8px solid #f0f2f2;
+  padding: 12px 0 4px;
+}
+
+.megamenu__section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #0f1111;
+  padding: 4px 18px 8px;
+}
+
+/* ── List ── */
+.megamenu__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.megamenu__item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 9px 18px;
+  font-size: 14px;
+  color: #0f1111;
+  text-decoration: none;
+  transition: background 0.1s;
+  cursor: pointer;
+}
+.megamenu__item:hover {
+  background: #f0f2f2;
+  color: #c7511f;
+}
+
+.megamenu__item-icon {
+  font-size: 16px;
+  width: 22px;
+  text-align: center;
+  flex-shrink: 0;
+}
+
+.megamenu__item--see-all {
+  color: #007185;
+  font-weight: 500;
+}
+.megamenu__item--see-all:hover { color: #c7511f; }
+
+/* ── Footer ── */
+.megamenu__footer {
+  border-top: 8px solid #f0f2f2;
+  padding: 12px 0 16px;
+  flex-shrink: 0;
+}
+
+/* ── Overlay (backdrop) ── */
+.megamenu-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.55);
+  z-index: 1999;
+  animation: fadeIn 0.2s ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}

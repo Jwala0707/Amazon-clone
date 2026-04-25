@@ -1,0 +1,78 @@
+.lang-banner {
+  background: #232f3e;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  font-size: 13px;
+  flex-wrap: wrap;
+  position: relative;
+  border-bottom: 2px solid #f0c14b;
+  animation: slideDown 0.25s ease;
+}
+
+@keyframes slideDown {
+  from { opacity: 0; transform: translateY(-100%); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.lang-banner__flag {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.lang-banner__text {
+  flex: 1;
+  color: #ccc;
+  min-width: 200px;
+}
+.lang-banner__text strong { color: #fff; }
+
+.lang-banner__actions {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.lang-banner__btn {
+  padding: 6px 14px;
+  border-radius: 3px;
+  font-size: 13px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background 0.12s;
+  white-space: nowrap;
+}
+
+.lang-banner__btn--primary {
+  background: #f0c14b;
+  border-color: #a88734;
+  color: #111;
+  font-weight: 700;
+}
+.lang-banner__btn--primary:hover { background: #eeb933; }
+
+.lang-banner__btn--secondary {
+  background: transparent;
+  border-color: #888;
+  color: #ccc;
+}
+.lang-banner__btn--secondary:hover { background: #37475a; color: #fff; }
+
+.lang-banner__close {
+  background: none;
+  border: none;
+  color: #aaa;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 2px 6px;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.lang-banner__close:hover { color: #fff; }
+
+@media (max-width: 600px) {
+  .lang-banner { flex-direction: column; align-items: flex-start; gap: 8px; }
+  .lang-banner__close { position: absolute; top: 8px; right: 10px; }
+}

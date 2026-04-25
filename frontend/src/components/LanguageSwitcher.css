@@ -1,0 +1,67 @@
+/* Language dropdown — appended to Header.css via import */
+.header__lang {
+  position: relative;
+}
+
+.lang-dropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  right: 0;
+  background: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 4px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.18);
+  min-width: 160px;
+  z-index: 999;
+  overflow: hidden;
+  animation: fadeDown 0.12s ease;
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 14px;
+  background: none;
+  border: none;
+  font-size: 14px;
+  color: #0f1111;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.1s;
+}
+.lang-option:hover { background: #f0f2f2; }
+.lang-option--active {
+  background: #febd69;
+  font-weight: 700;
+}
+.lang-option--active:hover { background: #f3a847; }
+
+.lang-flag { font-size: 18px; line-height: 1; }
+
+.header__country-flag {
+  font-size: 16px;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+.lang-dropdown__label {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: #888;
+  padding: 8px 14px 4px;
+}
+
+.lang-dropdown__divider {
+  height: 1px;
+  background: #e7e7e7;
+  margin: 4px 0;
+}
